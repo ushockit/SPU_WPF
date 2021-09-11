@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="apple-pay.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Icons\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="apple-pay.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Icons\apple-pay.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

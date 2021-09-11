@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    xmlns:col="clr-namespace:System.Collections;assembly=mscorlib"
+                    >
+    <sys:Double x:Key="btnFontSize">16</sys:Double>
+    <SolidColorBrush x:Key="btnBckg">DarkRed</SolidColorBrush>
+    <SolidColorBrush x:Key="btnFore">White</SolidColorBrush>
+    <FontWeight x:Key="btnFontWeight">Bold</FontWeight>
+    <sys:Double x:Key="btnWidth">80</sys:Double>
+    <col:ArrayList x:Key="names">
+        <sys:String>First</sys:String>
+        <sys:String>Second</sys:String>
+        <sys:String>Third</sys:String>
+        <sys:String>Fourth</sys:String>
+        <sys:String>Fifth</sys:String>
+    </col:ArrayList>
+</ResourceDictionary>

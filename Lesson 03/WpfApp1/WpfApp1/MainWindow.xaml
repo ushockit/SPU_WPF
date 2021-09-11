@@ -1,0 +1,58 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Window.Resources>
+        <!--<ResourceDictionary Source="ResourceDictionaries/Dictionary.xaml"/>-->
+    </Window.Resources>
+    <StackPanel>
+        <!-- TODO: Diff between Content & Text -->
+        <Button Content="01"
+                Foreground="{StaticResource btnFore}"
+                Background="{StaticResource btnBckg}"
+                FontSize="{StaticResource btnFontSize}"
+                FontWeight="{StaticResource btnFontWeight}"
+                Width="{DynamicResource btnWidth}"
+                Margin="5"
+                Click="Button_Click"/>
+        <Button Content="02"
+                Foreground="{StaticResource btnFore}"
+                Background="{StaticResource btnBckg}"
+                FontSize="{StaticResource btnFontSize}"
+                FontWeight="{StaticResource btnFontWeight}"
+                Width="{DynamicResource btnWidth}"
+                Margin="5"
+                Click="Button_Click"/>
+        <Button Content="03"
+                Foreground="{StaticResource btnFore}"
+                Background="{StaticResource btnBckg}"
+                FontSize="{StaticResource btnFontSize}"
+                FontWeight="{StaticResource btnFontWeight}"
+                Width="{StaticResource btnWidth}"
+                Margin="5"
+                Click="Button_Click"/>
+
+        <Button Width="100" Height="50" PreviewMouseDown="Button_MouseDown">
+            <Button.Content>
+                <StackPanel Orientation="Horizontal">
+                    <Image Width="50"
+                           PreviewMouseDown="Image_MouseDown"
+                           Source="/apple-pay.png"
+                           Stretch="Fill"
+                           StretchDirection="Both"
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"/>
+                    <StackPanel>
+                        <TextBlock Margin="2" Text="Hello"/>
+                        <TextBlock Margin="2" Text="World"/>
+                    </StackPanel>
+                </StackPanel>
+            </Button.Content>
+        </Button>
+    </StackPanel>
+</Window>
